@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    background-color: antiquewhite;
+}
+#titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin: 2rem;
+}
+.page{
+    text-align: center;
+    margin: 2rem 5rem;
+    width: 10rem;
+    height: 2rem;
+    background-color: rgba(220, 170, 54, 0.5);
+    border-radius: 1rem;
+}
+#tres{
+    display: flex;
+    flex-direction: column;
+}
+div{
+    display: flex;
+    flex-direction: row;
+}
+a{
+    
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}

@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#body {
+    background-color: #21183c;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 9rem;
+    background-color: #21183c;
+    gap: 1em;
+}
+
+.header_left {
+    flex: 1;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.botonMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: #21183c;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+#mboton {
+    width: 2rem;
+}
+
+#atom {
+    width: 2rem;
+}
+
+.botonMenu:focus {
+    outline: none;
+}
+
+.botonMenu:focus+.principal {
+    transform: translateX(0rem);
+}
+
+nav.principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 10rem;
+    background-color: #21183c;
+    transform: translateX(-15rem);
+    transition: 1s all;
+}
+
+nav.principal ul {
+    margin-top: 3rem;
+    padding: 0;
+    list-style: none;
+}
+
+ul:hover {
+    background-color: #3d3268;
+
+}
+
+nav.principal a {
+    display: block;
+    color: #A396E7;
+    padding: 1rem;
+    transition: .5s all;
+}
+
+nav.principal a:hover {
+    text-decoration: none;
+    background-color: #21183c;
+}
+
+
+
+
+.subheaderR {
+    display: flex;
+    width: 4rem;
+    margin-left: 6rem;
+    justify-content: space-around;
+    font-size: 1.2em;
+    gap: 1.5em;
+    position: relative;
+
+}
+
+main {
+    height: calc(100vh - 9rem);
+    overflow: auto;
+    overflow-y: auto;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #21183c;
+    gap: 2em;
+    justify-content: space-between;
+    padding: .6em;
+    background-color: #3d3268;
+}
+
+.headerart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5em;
+}
+
+.poster>img {
+    height: 90px;
+    width: 90px;
+    border-radius: 8px;
+}
+
+.poster {
+    flex: 1;
+}
+
+p {
+    color: #6457ac;
+}
+
+.namePelicula {
+    color: #A396E7;
+}
+
+#bell {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.logotipo {
+    color: rgb(218, 217, 217);
+    font-size: 16px;
+    font-family: monospace;
+    padding-left: 3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1rem;
+
+}
+
+.dashboard {
+    font-size: 1em;
+    color: rgb(230, 224, 224);
+    padding-left: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.new,
+.viewed,
+.expired {
+    background-color: #5FBA85;
+    border: none;
+    width: 6em;
+    height: 1.9em;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.viewed {
+    background-color: #EE63B6;
+}
+
+.expired {
+    background-color: #A396E7;
+}
+
+.artR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .2em;
+    flex: 3;
+}
+
+
+/* css search  privio*/
+
+.header_search {
+    display: flex;
+
+}
+
+.logo_search {
+    color: rgb(218, 217, 217);
+    font-size: 16px;
+    font-family: monospace;
+    padding-left: 5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1rem;
+
+}
+
+.send h2 {
+    color: white;
+    margin-left: 1rem;
+}
+
+#barra_buscar {
+    border: none;
+    background-color: #21183c;
+    height: 2rem;
+}
+
+.barra {
+    margin-left: 1rem;
+    display: flex;
+
+    width: 10rem;
+    border-bottom: solid 2px #6457ac;
+}
+
+#main_search {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+
+}
+
+#main_search {
+    height: 60rem;
+    overflow-y: scroll;
+
+
+}
+
+#movie {
+    background-color: #21183c;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    margin: 1rem;
+    flex: 1;
+    width: 10rem;
+    height: 10rem;
+}
+
+#movie h4 {
+    margin-top: 0.5rem;
+    color: #6457ac;
+
+}
+
+.post img {
+    flex: 1;
+    border-radius: 10px;
+    width: 9rem;
+    height: 11rem;
+
+
+}
+
+#date {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+#date p {
+    font-size: 10px;
+}
+
+#date img {
+    width: 2rem;
+
+}
+
+#newest {
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+}
+
+
+/* css trailer parte */
+
+
+#trailer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: #21183c;
+}
+
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#capi {
+    width: 400px;
+    height: 230px;
+}
+
+#play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.331);
+    position: fixed;
+}
+
+#play:hover {
+    background-color: #21183c;
+
+}
+
+#play img {
+    width: 30px;
+    height: 30px;
+}
+
+.info_video h1 {
+    margin: 1rem;
+    color: white;
+}
+
+.option {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+    top: 12.5rem;
+    position: fixed;
+}
+
+#time {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 10rem;
+    width: 10rem;
+}
+
+#icon_video {
+    width: 30px;
+    height: 30px;
+}
+
+h5 {
+    color: azure;
+}
+
+#description {
+    margin-top: 1rem;
+}
+
+#data {
+    width: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#boton_leave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 15rem;
+    height: 3rem;
+    margin-top: 3rem;
+
+    border-radius: 25px;
+    border: solid 2px #A396E7;
+}
+
+#boton_leave a {
+
+    text-decoration: none;
+}
